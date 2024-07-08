@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMdP+8b3C3xZCFOZIm7RmsLl5Bg5w0yRvwJyp6k" crossorigin="anonymous">
-    <title> Chef Savvy Recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    <title>Chef Savvy Recipes</title>
 </head>
 
 <body>
@@ -15,10 +15,12 @@
         <div class="logo">Chef Savvy Recipes</div>
         <div class="nav-bar">
             <ul>
+                <li id="userGreeting"></li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="/recipe">Recipes</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a id="authButton" href="/">Login</a></li>
             </ul>
         </div>
     </header>
@@ -27,7 +29,7 @@
             <h4>Unleash Your Culinary Passion</h4>
             <h1>Discover Taste Sensations</h1>
             <h3>Elevate Your Cooking Game</h3>
-            <a href="login.html" class="button">Start Cooking</a>
+            <a href="/recipe" class="button">Start Cooking</a>
         </div>
     </div>
     <section class="about">
@@ -40,13 +42,15 @@
         </div>
     </section>
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" class="social-icon"> <i class="fa fa-facebook"></i> </a>
-            <a href="https://www.twitter.com" class="social-icon"> <i class="fa fa-twitter"></i> </a>
-            <a href="https://www.instagram.com" class="social-icon"> <i class="fa fa-instagram"></i> </a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="social-icon"> <i class="fab fa-facebook"></i> </a>
+                <a href="https://www.twitter.com" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+                <a href="https://www.instagram.com" class="social-icon"> <i class="fab fa-instagram"></i> </a>
+            </div>
         </div>
         <h5>&copy;2024 By Chef Savvy</h5>
     </footer>
+    <script src="homescript.js"></script>
 </body>
 
 </html>

@@ -16,30 +16,34 @@
         <div class="logo">Chef Savvy Recipes</div>
         <div class="nav-bar">
             <ul>
+                <li id="userGreeting"></li>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="/recipe">Recipes</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a id="authButton" href="/">Login</a></li>
             </ul>
         </div>
     </header>
 
     <section class="categories">
         <div class="categories-container">
-            <h2>Recipe Management</h2>
-            <form id="recipeForm" action="/add-recipe" method="POST">
+            <h2>Add Recipe</h2>
+            <form id="recipeForm" action="/add-recipe" method="POST" enctype="multipart/form-data">
                 <input type="text" id="recipeTitle" name="title" placeholder="Recipe Title" required>
                 <textarea id="ingredients" name="ingredients" placeholder="Ingredients" required></textarea>
                 <textarea id="instructions" name="instructions" placeholder="Instructions" required></textarea>
                 <input type="text" id="cookingTime" name="cooking_time" placeholder="Cooking Time" required>
                 <input type="text" id="servingSize" name="serving_size" placeholder="Serving Size" required>
                 <input type="text" id="categoryName" name="categories" placeholder="Category Name" required>
+                <input type="file" id="recipeImage" name="recipeImage" accept=".jpg, .jpeg, .png" required>
                 <button type="submit">Add Recipe</button>
             </form>
-            <div id="imageBox" class="dropbox">
-                <p>Drag and drop an image here</p>
-                <img id="preview" src="" alt="Image preview" style="display:none;">
-            </div>
+        </div>
+
+        <!-- This isRecipes box -->
+        <div class="box">
+            <h2><a href="my-recipes.html">My Recipes</a></h2>
         </div>
     </section>
 
@@ -51,8 +55,7 @@
         </div>
         <h5>&copy;2024 By Chef Savvy</h5>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="radminscript.js"></script>
 </body>
 
 </html>

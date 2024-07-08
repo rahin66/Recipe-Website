@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMdP+8b3C3xZCFOZIm7RmsLl5Bg5w0yRvwJyp6k" crossorigin="anonymous">
-
-    
-    <title> Chef Savvy Recipes</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Chef Savvy Recipes</title>
 </head>
 
 <body>
@@ -17,41 +15,48 @@
         <div class="logo">Chef Savvy Recipes</div>
         <div class="nav-bar">
             <ul>
+                <li id="userGreeting"></li>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="/recipe">Recipes</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a id="authButton" href="/">Login</a></li>
             </ul>
         </div>
     </header>
-	<section class="contact">
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong>  Dubai Knowledge Park, Dubai,U.A.E.</p>
-            <p><strong>Phone:</strong>+971 50 1234567</p>
-            <p><strong>Email:</strong>chefsavvyinfo@gmail.com</p>
-        </div>
-        <div class="contact-form">
-            <h2>Contact Form</h2>
-			<form action="mailto:chefsavvyinfo@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message"  required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+
+    <section class="contact">
+        <div class="main">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Dubai Knowledge Park, Dubai, U.A.E.</p>
+                <p><strong>Phone:</strong> +971 50 1234567</p>
+                <p><strong>Email:</strong> chefsavvyinfo@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="mailto:chefsavvyinfo@gmail.com" method="POST" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
-<footer>
-    <div class="social-icons">
-        <a href="https://www.facebook.com" class="social-icon"> <i class="fab fa-facebook"></i> </a>
-        <a href="https://www.twitter.com" class="social-icon"> <i class="fab fa-twitter"></i> </a>
-        <a href="https://www.instagram.com" class="social-icon"> <i class="fab fa-instagram"></i> </a>
-    </div>
-    <h5>&copy;2024 By Chef Savvy </h5>
-</footer>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <h5>&copy;2024 By Chef Savvy</h5>
+    </footer>
+    <script src="contactscript.js"></script>
 </body>
 
 </html>
